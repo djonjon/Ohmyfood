@@ -10,13 +10,15 @@ body
     justify-content: center;
 }
 
+.container{
+    max-width: 767.98px;
+}
 .imposter
 {
     display: flex;
     justify-content: center;
     padding-top: 8px;
     margin-bottom: 5px;
-
 }
 
 .logo
@@ -34,16 +36,20 @@ form
 
 .btn-location
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50px;
     padding-left: 10px;
     border-style: hidden;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: #EAEAEA;
 }
 
 .fa-location-dot
 {
-    font-size: 120%;
+    font-size: medium;
     color: #353535;
     margin-left: 15px;
 }
@@ -80,5 +86,119 @@ h1
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: 79%;
+    width: 75%;
+}
+
+.btn-explore
+{
+    height: 50px;
+    width: 59%;
+    margin-bottom: 3.5em;
+    margin-top: 1.7em;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border-style: hidden;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.functioning
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+
+.functioning-body
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-circle{
+    position: relative;
+    left: 10px;
+    top: -11px;
+    width: 20px;
+    border: 1px #9356DC solid;
+    border-radius: 50%;
+    color: white;
+    background: #9356DC;
+    text-align: center;
+}
+
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store{
+    color: #7e7e7e;
+    font-size: larger;
+    margin-left: 0.8em;
+}
+
+.fa-mobile-screen-button,
+.fa-list,
+.fa-store:hover{
+    color: #9356DC;
+}
+
+.functioning-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    height: 72px;
+    border: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #F6F6F6;
+    padding-left: 10px;
+    margin-bottom: 1.5em;
+}
+
+.functioning-card:hover{
+    background: #F5EDFF;
+}
+
+.fctn-txt{
+    margin-left: 0.8em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.align{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    border: hidden;
+    border-radius: 15%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.card-anch{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 231px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15%;
 }

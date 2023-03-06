@@ -79,6 +79,7 @@ input
     background-color: #F6F6F6;
     margin-left: -20px;
     padding-right: 40px;
+    padding-bottom: 46px;
 }
 
 .stack-body{
@@ -156,7 +157,7 @@ h1,h2{
     border: hidden;
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    background-color: #F6F6F6;
+    background-color: #F7F7F7;
     padding-left: 10px;
     margin-bottom: 1.5em;
 }
@@ -169,12 +170,9 @@ h1,h2{
     margin-left: 0.8em;
 }
 
-.effect:hover .functioning-card{
+.functioning-card:hover{
     background-color: #F5EDFF;
-    color: #9356DC;
 }
-
-
 
 .fctn-txt{
     margin-left: 0.8em;
@@ -207,11 +205,39 @@ h1,h2{
     background: white;
 }
 
+.card-picture{
+    height: 185px;
+    width: 100%;
+}
+
+.card-picture > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.badge-new{
+    position: relative;
+    top: 0px;
+    height: 29px;
+    width: 80px;
+    font-size: 14px;
+    color: #008766;
+    background-color: #99E2D0;
+    float: right;
+    top: -175px;
+    right: 1em;
+}
 
 
-.card img{
+.card-picture img{
+    position: relative;
     object-fit: cover;
-    height: 175px;
+    object-position: 100% 65%;
+    height: 100%;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -235,6 +261,7 @@ h1,h2{
 .contain-direction{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 h3{

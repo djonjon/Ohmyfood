@@ -206,11 +206,7 @@ h1,h2{
 }
 
 .card-picture{
-<<<<<<< HEAD
     height: 185px;
-=======
-    height: 175px;
->>>>>>> main
     width: 100%;
 }
 
@@ -239,11 +235,7 @@ h1,h2{
 .card-picture img{
     position: relative;
     object-fit: cover;
-<<<<<<< HEAD
     object-position: 100% 65%;
-=======
-    object-position: 50% 62%;
->>>>>>> main
     height: 100%;
     width: 100%;
     border-top-right-radius: 15px;

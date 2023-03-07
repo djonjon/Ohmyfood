@@ -174,6 +174,10 @@ h1,h2{
     background-color: #F5EDFF;
 }
 
+.functioning-card:hover .fa-solid{
+    color: #9356DCDC;
+}
+
 .fctn-txt{
     margin-left: 0.8em;
     font-size: 16px;
@@ -194,8 +198,6 @@ h1,h2{
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
     height: 251px;
     width: 100%;
     margin-bottom: 1.1em;
@@ -243,17 +245,18 @@ h1,h2{
 }
 
 .card-container{
-    width: 100%;
-    height: 77px;
+    display: flex;
+    flex-direction: row;
+    width: 93%;
     padding-left: 0.7em;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-anch{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
     text-decoration: none;
     color: black;
 }

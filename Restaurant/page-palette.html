@@ -2,88 +2,122 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/stylemenu.css">
         <script src="https://kit.fontawesome.com/d9fab67fa2.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
         <title>Ohmyfood</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="stylemenu.css"/>
     </head>
     <body>
-        <div class="container"></div>
+    <body>
+        <div class="container">
             <header>
-                <img class="logo" source="Images et textes Ohmyfood/images/logo/Ohmyfood" alt="logo">
+                <div class="imposter">
+                    <a href=".git/Ohmyfood/index.html">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <div class="logo">
+                        <img class="logo-size" src="Images_page/images/logo/ohmyfood.png" alt="logo">
+                    </div>
+                    
+                </div>
             </header>
             <main>
-                <img class="Picture-page" source="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash" alt="Photo_plat_Menilmontant">
+                <div class="picture-box">
+                    <img class="picture-page" src="Images_page/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat">
+                </div>
                 <section class="menu-body">
                     <div class="menu__header">
-                        <h1 class="menu__title">La palette du goût</h1>
+                        <h1 class="restaurant__title">La palette du goût</h1>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                     <div class="menu__section">
-                        <h2 class="menu__subtitle">ENTRÉES</h2>
+                        <h2 class="menu__title">ENTRÉES</h2>
                         <div class="menu__card">
                             <h3>Fricassée d'escargots</h3>
-                            <p>Au piment d'Espelette<span class="price">25€</span></p>
+                            <div>
+                                <p class="intitulate">Au piment d'Espelette<span class="price">25€</span></p>
+                            </div>
                         </div>
                         <div class="menu__card">
                             <h3>Foie gras de canard mi-cuit</h3>
-                            <p>Et ses copeaux de truffe noire<span class="price">35€</span></p>
+                            <div>
+                                <p class="intitulate">Et ses copeaux de truffe noire<span class="price">35€</span></p>
+                            </div>
                         </div>
                         <div class="menu__card">
                             <h3>Œuf au plat</h3>
-                            <p>Assaisonné à la truffe sur lit de caviar<span class="price">20€</span></p>
+                            <div>
+                                <p class="intitulate">Assaisonné à la truffe sur lit de caviar<span class="price">20€</span></p>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__section">
                         <h2 class="menu__subtitle">PLATS</h2>
                         <div class="menu__card">
                             <h3>Filet de bœuf aux herbes</h3>
-                            <p>Accompagné de sa ribambelle de légumes<span class="price">40€</span></p>
+                            <div>
+                                <p class="intitulate">Accompagné de sa ribambelle de légumes<span class="price">40€</span></p>
+                            </div>
                         </div>
                         <div class="menu__card">
                             <h3>Parmentier de queue de bœuf</h3>
-                            <p>À la truffe noire sur sa purée de panais<span class="price">35€</span></p>
+                            <div>
+                                <p class="intitulate">À la truffe noire sur sa purée de panais<span class="price">35€</span></p>
+                            </div>
                         </div>
                         <div class="menu__card">
                             <h3>Filet de turbot</h3>
-                            <p>Aux agrumes<span class="price">44€</span></p>
+                            <div>
+                                <p class="intitulate">Aux agrumes<span class="price">44€</span></p>
+                            </div>
                         </div>
                         <div class="menu__section">
                             <h2 class="menu__subtitle">DESSERTS</h2>
                             <div class="menu__card">
                                 <h3>Paris-Brest</h3>
-                                <p>Revisité<span class="price">18€</span></p>
+                                <div>
+                                    <p class="intitulate">Revisité<span class="price">18€</span></p>
+                                </div>
                             </div>
                             <div class="menu__card">
                                 <h3>Macaron au chocolat d'exception</h3>
-                                <p>Et glace à la vanille de Madagascar<span class="price">22€</span></p>
+                                <div>
+                                    <p class="intitulate">Et glace à la vanille de Madagascar<span class="price">22€</span></p>
+                                </div>
                             </div>
                             <div class="menu__card">
                                 <h3>Mousse au chocolat</h3>
-                                <p>Au piment d'Espelette et à la truffe noire<span class="price">23€</span></p>
+                                <div>
+                                    <p class="intitulate">Au piment d'Espelette et à la truffe noire<span class="price">23€</span></p>
+                                </div>
                             </div>
                         </div>
-                        <button>Commander</button>
+                        <div class="btn-content">
+                            <button class="btn_command">Commander</button>
+                        </div>
                     </div>
                 </section>
             </main>
             <footer>
-                <img class="logo" src="" alt="Logo">
-                <div>
-                    <div class="footer-link">
-                        <i class="fa-solid fa-utensils"></i>
-                        <p>Proposer un restaurant</p>
+                <div class="footer-container">
+                    <img class="logo-footer" src="Images_page/images/logo/ohmyfood.png" alt="Logo">
+                    <div class="footer-contain">
+                        <div class="footer-contain-direction">
+                            <i class="fa-solid fa-utensils"></i>
+                            <p>Proposer un restaurant</p>
+                        </div>
+                        <div class="footer-contain-direction">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <p>Devenir partenaire</p>
+                        </div>
+                        <p>Mentions légales</p>
+                        <p>Contact</p>
                     </div>
-                    <div class="footer-link">
-                        <i class="fa-solid fa-handshake-angle"></i>
-                        <p>Devenir partenaire</p>
-                    </div>
-                    <p>Mentions légales</p>
-                    <p>Contact</p>
                 </div>
             </footer>
         </div>

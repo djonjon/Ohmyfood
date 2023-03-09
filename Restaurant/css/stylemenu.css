@@ -5,21 +5,21 @@
 
 body
 {
-    display: flex;
-    flex-direction: column;
     margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
 }
 
 .container{
-    padding: 0 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
 }
 
 .fa-arrow-left{
     font-size: larger;
     color: #353535;
-    padding-left: 10px;
 }
 
 .imposter
@@ -28,45 +28,43 @@ body
     justify-content: flex-start;
     align-items: center;
     height: 50px;
-
+    padding-left: 1em;
 }
 
 .logo{
     display: flex;
     width: 75%;
     justify-content: center;
-    margin-left: 1em;
 }
 
 .logo-size
 {
     display: flex;
-    justify-content: center;
     width: 60%;
     max-width: 200px;
+    margin-left: 1.5em;
 }
 
 .picture-box{
+    display: flex;
+    justify-content: center;
     height: 275px;
-    width: 108%;
-    margin-left: -13px;
+    width: 100%;
 }
 
 .picture-page{
     position: relative;
+    display: flex;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     z-index: 1;
 }
 
 .menu-body{
     position: relative;
-    width: 103%;
+    width: 100%;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    margin-left: -13px;
-    padding-left: 13px;
     background: #f7f7f7;
     top: -60px;
     z-index: 2;
@@ -79,6 +77,10 @@ body
     align-items: center;
     text-align: center;
     padding-top: 20px;
+}
+
+.menu__section{
+    padding: 0 13px;
 }
 
 h1{
@@ -150,11 +152,21 @@ h3 , p{
     height: 50px;
     border-radius: 25px;
     border: hidden;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     font-size: 16px;
     font-weight: 500;
     color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn_command:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 footer{
@@ -164,7 +176,7 @@ footer{
     background-color: #353535;
     color: white;
     margin-left: -20px;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .footer-container{

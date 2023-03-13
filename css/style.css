@@ -75,7 +75,8 @@ input
 
 .stack
 {
-    width: 100%;
+    display: flex;
+    width: 103.5%;
     background-color: #F6F6F6;
     margin-left: -20px;
     padding-right: 40px;
@@ -84,6 +85,7 @@ input
 
 .stack-body{
     display: flex;
+    width: 100%;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -105,6 +107,9 @@ h1,h2{
 
 .btn-explore
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     width: 80%;
     max-width: 218px;
@@ -142,6 +147,7 @@ button:hover{
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .number-circle{
@@ -177,10 +183,12 @@ button:hover{
     color: #7e7e7e;
     font-size: larger;
     margin-left: 0.8em;
+    transition: 0.3s;
 }
 
 .functioning-card:hover{
     background-color: #F5EDFF;
+    transition: 0.3s;
 }
 
 .functioning-card:hover .fa-solid{
@@ -286,8 +294,30 @@ h3{
     font-weight: 300;
 }
 
+.heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .fa-heart{
     font-size: 21px;
+    position: absolute;
+}
+
+.like{
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.like:hover{
+    opacity: 1;
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 footer{

@@ -13,6 +13,7 @@ body
 
 .container{
     width: 100%;
+    height: auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -20,8 +21,8 @@ body
 {
     display: flex;
     justify-content: center;
-    padding-top: 8px;
-    margin-bottom: 5px;
+    padding-top: 1em;
+    margin-bottom: 1em;
 }
 
 .logo
@@ -80,7 +81,10 @@ input
     background-color: #F6F6F6;
     margin-left: -20px;
     padding-right: 40px;
-    padding-bottom: 46px;
+}
+
+.presentation{
+    padding-bottom: 0.5em;
 }
 
 .stack-body{
@@ -113,7 +117,7 @@ h1,h2{
     height: 50px;
     width: 80%;
     max-width: 218px;
-    margin-bottom: 3.5em;
+    margin-bottom: 2em;
     margin-top: 1.7em;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -143,7 +147,7 @@ button:hover{
     padding-bottom: 2.5em;
 }
 
-.functioning-body
+.functioning-section
 {
     display: flex;
     align-items: center;
@@ -201,6 +205,10 @@ button:hover{
     font-weight: 500;
 }
 
+.resto{
+    padding-bottom: 4.5em;
+}
+
 .stack-card{
     display: flex;
     flex-direction: column;
@@ -254,7 +262,6 @@ button:hover{
 .card-picture img{
     position: relative;
     object-fit: cover;
-    object-position: 100% 65%;
     height: 100%;
     width: 100%;
     border-top-right-radius: 15px;
@@ -298,6 +305,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 0.5em;
 }
 
 .fa-heart{
@@ -366,4 +374,72 @@ footer{
 
 .fa-handshake-angle{
     width: 11px;
+}
+
+/*** Media Queries ***/
+
+@media (min-width: 767.98px)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .functioning{
+        max-width: 80%;
+        margin-left: 15em;
+    }
+
+    .functioning-body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stack-card{
+        padding-left: 15em;
+    }
+
+    .stack-card-body{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card{
+        width: 335px;
+        height: 250px;
+        margin-right: 1.5em;
+    }
+
+    .card-container{
+        width: 90%;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer-container{
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    .logo-footer{
+        margin: 0px;
+    }
+
+    .footer-contain{
+        display: flex;
+        flex-direction: row;
+        margin-right: 1.5em;
+    }
+
+    .footer-contain-direction{
+        margin-right: 1.5em;
+    }
 }

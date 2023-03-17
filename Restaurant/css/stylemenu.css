@@ -15,7 +15,6 @@ body
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    background: #f7f7f7;
 }
 
 .fa-arrow-left{
@@ -79,14 +78,24 @@ body
 }
 
 .menu-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    max-width: 1055px;
+    background: #f7f7f7;
 }
 
 
 .menu__section{
-    padding-left: 13px;
-    padding-right: 13px;
-    margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
 }
 
 .menu__subtitle{
@@ -152,11 +161,13 @@ h3 , p{
 .menu__card{
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 15px;
     background-color: white;
     padding-left: 10px;
     margin-bottom: 1em;
     width: 95%;
+    max-width: 634px;
     height: 68px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
@@ -212,8 +223,8 @@ h3 , p{
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 80%;
-    max-width: 218px;
+    width: 30%;
+    max-width: 186px;
     margin-bottom: 2em;
     margin-top: 1.7em;
     border-radius: 25px;

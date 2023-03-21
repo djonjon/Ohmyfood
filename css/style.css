@@ -369,8 +369,8 @@ footer{
     flex-direction: column;
     width: 100%;
     margin-left: 30px;
-    padding-bottom: 1.5em;
-    padding-top: 22px;
+    padding-bottom: 1.3em;
+    padding-top: 2em;
 }
 
 .logo-footer{
@@ -409,14 +409,12 @@ footer{
 @media (min-width: 767.98px)
 {
     .functioning-body{
-        display: flex;
         flex-direction: column;
         margin: 0px auto;
     }
 
     .functioning-content{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }

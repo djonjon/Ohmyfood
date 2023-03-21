@@ -3,6 +3,28 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Titre */
+
+h1
+{
+    margin-top: 39px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+h1,h2{
+    font-size: 24px;
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Corps */
+
 body
 {
     display: flex;
@@ -14,11 +36,13 @@ body
 
 .container{
     width: 100%;
-    height: 100%;
     padding: 0 20px;
     box-sizing: border-box;
 }
-.imposter
+
+/* header */
+
+.imposterbar
 {
     display: flex;
     justify-content: center;
@@ -32,6 +56,8 @@ body
     max-width: 200px;
 }
 
+/* Formulaire */
+
 form
 {
     display: flex;
@@ -40,7 +66,7 @@ form
     margin-right: -20px;
 }
 
-.btn-location
+.locationbar
 {
     display: flex;
     justify-content: center;
@@ -75,6 +101,8 @@ input
     font-size: 16px;
 }
 
+/* Présentation */
+
 .stack
 {
     display: flex;
@@ -94,19 +122,6 @@ input
     text-align: center;
     justify-content: center;
     margin-left: 20px;
-}
-
-h1
-{
-    margin-top: 39px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-h1,h2{
-    font-size: 24px;
 }
 
 .btn-explore
@@ -135,10 +150,12 @@ h1,h2{
     color: #ffffff;
 }
 
-button:hover{
+.btn-explore:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
+
+/* Explication fonctionnement site */
 
 .functioning
 {
@@ -198,9 +215,11 @@ button:hover{
     transition: 0.3s;
 }
 
+/* Effet hover fonctionnement */
+
 .functioning-card:hover{
     background-color: #F5EDFF;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .functioning-card:hover .fa-solid{
@@ -213,15 +232,17 @@ button:hover{
     font-weight: 500;
 }
 
+/* Section Restaurants */
+
 .resto{
-    padding-bottom: 4.5em;
+    padding-bottom: 4em;
 }
 
 .stack-card{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 20px;
+    margin: 0px 0px;
 }
 
 .stack-card h2{
@@ -299,15 +320,12 @@ button:hover{
     width: 100%;
 }
 
-h3{
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
 .contain-direction p{
     margin: 0px;
     font-weight: 300;
 }
+
+/* Like + effet */
 
 .heart{
     display: flex;
@@ -336,6 +354,8 @@ h3{
     background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
+/* Footer */
+
 footer{
     width: 100%;
     background-color: #353535;
@@ -349,7 +369,7 @@ footer{
     flex-direction: column;
     width: 100%;
     margin-left: 30px;
-    padding-bottom: 33px;
+    padding-bottom: 1.5em;
     padding-top: 22px;
 }
 
@@ -388,17 +408,13 @@ footer{
 
 @media (min-width: 767.98px)
 {
-    .container{
+    .functioning-body{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin: 0px auto;
     }
 
-    .functioning{
-        justify-content: center;
-    }
-
-    .functioning-body{
+    .functioning-content{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -406,14 +422,14 @@ footer{
     }
 
     .stack-card{
-        max-width: 1050px;
+        max-width: 75%;
         justify-content: center;
     }
 
     .stack-card-body{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5rem;
+        gap: 2rem 5rem;
     }
 
     .card-container{
@@ -439,14 +455,10 @@ footer{
     .footer-contain{
         display: flex;
         flex-direction: row;
-        margin-right: 1.5em;
+        margin-right: 3em;
     }
 
     .footer-contain-direction{
         margin-right: 1.5em;
     }
-}
-
-@media (min-width: 1440px){
-    
 }

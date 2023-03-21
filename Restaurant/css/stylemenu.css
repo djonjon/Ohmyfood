@@ -224,7 +224,7 @@ h3 , p{
 
 .card-anch:hover +.choice{
     visibility: visible;
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in;
     transform: scale(1.0);
     transform-origin: right center;
 }
@@ -311,4 +311,11 @@ footer{
 
 .fa-handshake-angle{
     width: 11px;
+}
+
+/*** Media Queries ***/
+
+@media (min-width: 767.98px)
+{
+
 }

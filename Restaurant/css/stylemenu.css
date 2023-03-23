@@ -172,6 +172,35 @@ h3 , p{
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 
+.entrance , .plate, .dessert{
+    animation-name: appear;
+}
+
+.first{
+    animation-duration: 1s;
+}
+
+.second{
+    animation-duration: 1.5s;
+}
+
+.third{
+    animation-duration: 2s;
+}
+
+.fourth{
+    animation-duration: 2.5s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .menu__card p{
     font-size: 15px;
@@ -211,7 +240,6 @@ h3 , p{
     max-width: 59px;
     height: 100%;
     border-radius: 0px 15px 15px 0px;
-    transition-property: transform 300ms;
     transform: scale(0);
 }
 
@@ -224,7 +252,7 @@ h3 , p{
 
 .card-anch:hover +.choice{
     visibility: visible;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.4s ease-in;
     transform: scale(1.0);
     transform-origin: right center;
 }
@@ -317,5 +345,29 @@ footer{
 
 @media (min-width: 767.98px)
 {
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+    }
 
+    .footer-container{
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    .logo-footer{
+        margin: 0px;
+    }
+
+    .footer-contain{
+        display: flex;
+        flex-direction: row;
+        margin-right: 3em;
+    }
+
+    .footer-contain-direction{
+        margin-right: 1.5em;
+    }
 }

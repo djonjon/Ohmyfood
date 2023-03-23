@@ -3,6 +3,63 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Loader */
+
+/* .loader{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+@keyframes flash {
+    0% {
+        color: #9356DC;
+        text-shadow: 0.2rem 0.2rem #af7bee;
+    }
+    33% {
+        color: #FF79DA;
+        text-shadow: 0.2rem 0.2rem #be56a1;
+    }
+    66% {
+        color: #99E2D0;
+        text-shadow: 0.2rem 0.2rem #6fac9d;
+    }
+    99% {
+        color: #9356DC;
+        text-shadow: 0.2rem 0.2rem #af7bee;
+    }
+}
+
+.loader__lettre{
+    font-size: 120px;
+    color: #9356DC;
+    font-family: 'Shrikhand';
+    animation: flash 3s linear infinite;
+    opacity: 0.7;
+}
+
+.loader__lettre:nth-child(1){
+    animation-delay: 0.3s;
+}
+
+.loader__lettre:nth-child(2){
+    animation-delay: 0.6s;
+}
+
+.loader__lettre:nth-child(3){
+    animation-delay: 0.9s;
+}
+
+.pleasewait{
+    font-family: 'Shrikhand';
+    font-size: 25px;
+    text-align: center;
+} */
+
 /* Titre */
 
 h1
@@ -112,7 +169,7 @@ input
 }
 
 .presentation{
-    padding-bottom: 0.5em;
+    padding-bottom: 0.2em;
 }
 
 .stack-body{
@@ -121,7 +178,6 @@ input
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-left: 20px;
 }
 
 .btn
@@ -132,6 +188,7 @@ input
     height: 50px;
     width: 80%;
     max-width: 218px;
+    min-width: 150px;
     margin-bottom: 2em;
     margin-top: 1.7em;
     border-radius: 25px;
@@ -219,7 +276,7 @@ input
 
 .functioning-card:hover{
     background-color: #F5EDFF;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .functioning-card:hover .fa-solid{
@@ -331,7 +388,7 @@ input
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 0.5em;
+    padding-right: 0.2em;
 }
 
 .fa-heart{
@@ -373,12 +430,18 @@ footer{
     padding-top: 2em;
 }
 
+.colorfooter{
+    color: #ffffff;
+}
+
 .logo-footer{
     width: 138px;
     filter: invert(100%);
     margin-bottom: 1em;
 }
 .footer-contain{
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     font-weight: 400;
 }
@@ -408,8 +471,8 @@ footer{
 
 @media (min-width: 767.98px)
 {
+
     .functioning-body{
-        flex-direction: column;
         margin: 0px auto;
     }
 
@@ -420,7 +483,7 @@ footer{
     }
 
     .stack-card{
-        max-width: 75%;
+        max-width: 1050px;
         justify-content: center;
     }
 
@@ -450,10 +513,9 @@ footer{
         margin: 0px;
     }
 
-    .footer-contain{
+    .colorfooter{
         display: flex;
         flex-direction: row;
-        margin-right: 3em;
     }
 
     .footer-contain-direction{

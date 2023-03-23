@@ -270,6 +270,7 @@ h3 , p{
     height: 50px;
     width: 30%;
     max-width: 186px;
+    min-width: 120px;
     margin-bottom: 2em;
     margin-top: 1.7em;
     border-radius: 25px;
@@ -298,7 +299,7 @@ footer{
     background-color: #353535;
     color: white;
     margin-left: -20px;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .footer-container{
@@ -306,8 +307,14 @@ footer{
     flex-direction: column;
     width: 100%;
     margin-left: 30px;
-    padding-bottom: 33px;
-    padding-top: 22px;
+    padding-bottom: 1.3em;
+    padding-top: 2em;
+}
+
+.colorfooter{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
 }
 
 .logo-footer{
@@ -361,10 +368,9 @@ footer{
         margin: 0px;
     }
 
-    .footer-contain{
+    .colorfooter{
         display: flex;
         flex-direction: row;
-        margin-right: 3em;
     }
 
     .footer-contain-direction{

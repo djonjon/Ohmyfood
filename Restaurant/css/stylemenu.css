@@ -33,7 +33,7 @@ body
 
 .logo{
     display: flex;
-    width: 75%;
+    width: 90%;
     justify-content: center;
 }
 
@@ -42,7 +42,6 @@ body
     display: flex;
     width: 60%;
     max-width: 200px;
-    margin-left: 1.5em;
 }
 
 .picture-box{
@@ -170,35 +169,59 @@ h3 , p{
     max-width: 634px;
     height: 68px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    animation : appear ease-in;
 }
 
-.entrance , .plate, .dessert{
-    animation-name: appear;
-}
-
-.first{
-    animation-duration: 1s;
-}
-
-.second{
-    animation-duration: 1.5s;
-}
-
-.third{
+.one{
     animation-duration: 2s;
 }
 
-.fourth{
+.two{
     animation-duration: 2.5s;
 }
+
+.three{
+    animation-duration: 3s;
+}
+
+.four{
+    animation-duration: 3.5s;
+}
+
+.five{
+    animation-duration: 4s;
+}
+
+.six{
+    animation-duration: 4.5s;
+}
+
+.seven{
+    animation-duration: 5s;
+}
+
+.eight{
+    animation-duration: 5.5s;
+}
+
+.nine{
+    animation-duration: 6s;
+}
+
+.ten{
+    animation-duration: 6.5s;
+}
+
 
 @keyframes appear {
     from {
         opacity: 0;
+        transform: scale(0);
     }
 
     to {
         opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -312,8 +335,6 @@ footer{
 }
 
 .colorfooter{
-    display: flex;
-    flex-direction: column;
     color: #ffffff;
 }
 
@@ -323,6 +344,8 @@ footer{
     margin-bottom: 1em;
 }
 .footer-contain{
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     font-weight: 400;
 }
@@ -352,6 +375,16 @@ footer{
 
 @media (min-width: 767.98px)
 {
+    .menu__header{
+        justify-content: center;
+        padding-right: 3.5em;
+    }
+
+    .fa-heart{
+        display: flex;
+        margin-left: 3em;
+    }
+
     .footer{
         display: flex;
         justify-content: flex-end;
@@ -362,6 +395,10 @@ footer{
         align-items: center;
         text-align: center;
         width: 95%;
+    }
+
+    .footer-contain{
+        flex-direction: row-reverse;
     }
 
     .logo-footer{

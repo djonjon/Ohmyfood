@@ -3,17 +3,52 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Corps */
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: #F6F6F6;
+}
+
+.container{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 /* Loader */
 
-/* .loader{
-   position: absolute;
+.loader{
    width: 100%;
+   position: absolute;
    height: 100%;
-   display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   padding-bottom: 15.25em;
+   padding-top: 15.25em;
+   display: flex;
+   text-align: center;
+   float: center;
+   background: #F6F6F6;
+   animation: invisible 3s ease-in-out;
+   visibility: hidden;
+   z-index: 1;
 }
+
+@keyframes invisible {
+    from {
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
+
+
 
 @keyframes flash {
     0% {
@@ -28,18 +63,17 @@
         color: #99E2D0;
         text-shadow: 0.2rem 0.2rem #6fac9d;
     }
-    99% {
+    100% {
         color: #9356DC;
         text-shadow: 0.2rem 0.2rem #af7bee;
     }
 }
 
 .loader__lettre{
-    font-size: 120px;
+    font-size: 100px;
     color: #9356DC;
     font-family: 'Shrikhand';
-    animation: flash 3s linear infinite;
-    opacity: 0.7;
+    animation: flash 3s infinite;
 }
 
 .loader__lettre:nth-child(1){
@@ -55,10 +89,12 @@
 }
 
 .pleasewait{
+    display: flex;
+    justify-content: center;
     font-family: 'Shrikhand';
     font-size: 25px;
     text-align: center;
-} */
+}
 
 /* Titre */
 
@@ -78,23 +114,6 @@ h1,h2{
 h3{
     margin-top: 10px;
     margin-bottom: 5px;
-}
-
-/* Corps */
-
-body
-{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    overflow-x: hidden;
-    background-color: #F6F6F6;
-}
-
-.container{
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
 
 /* header */
@@ -507,6 +526,11 @@ footer{
         align-items: center;
         text-align: center;
         width: 95%;
+        max-width: 1600px;
+    }
+
+    .footer-contain{
+        flex-direction: row-reverse;
     }
 
     .logo-footer{

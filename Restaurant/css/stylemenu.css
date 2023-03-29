@@ -134,9 +134,7 @@ h1{
 
 .like:hover{
     opacity: 1;
-    background-clip: border-box;
     background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
@@ -257,7 +255,6 @@ h3 , p{
 
 .choice{
     visibility: collapse;
-    vertical-align: auto;
     background-color: #99E2D0;
     width: 15%;
     max-width: 59px;
@@ -358,6 +355,9 @@ footer{
 .footer-contain-direction{
     display: flex;
     align-items: center;
+}
+
+.bold{
     font-weight: 500;
 }
 
@@ -398,7 +398,7 @@ footer{
     }
 
     .footer-contain{
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     .logo-footer{

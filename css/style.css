@@ -27,15 +27,15 @@ body
    position: absolute;
    height: 100%;
    flex-direction: column;
-   padding-bottom: 15.25em;
-   padding-top: 15.25em;
+   padding-bottom: 14em;
+   padding-top: 14em;
    display: flex;
    text-align: center;
-   float: center;
    background: #F6F6F6;
    animation: invisible 3s ease-in-out;
    visibility: hidden;
    z-index: 1;
+   overflow: hidden;
 }
 
 @keyframes invisible {
@@ -462,7 +462,6 @@ footer{
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    font-weight: 400;
 }
 
 .footer-contain p{
@@ -473,6 +472,9 @@ footer{
 .footer-contain-direction{
     display: flex;
     align-items: center;
+}
+
+.bold{
     font-weight: 500;
 }
 
@@ -524,13 +526,12 @@ footer{
     .footer-container{
         flex-direction: row-reverse;
         align-items: center;
-        text-align: center;
         width: 95%;
         max-width: 1600px;
     }
 
     .footer-contain{
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     .logo-footer{
@@ -543,6 +544,6 @@ footer{
     }
 
     .footer-contain-direction{
-        margin-right: 1.5em;
+        margin-right: 2.5em;
     }
 }

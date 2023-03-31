@@ -24,18 +24,16 @@ body
 
 .loader{
    width: 100%;
-   position: absolute;
-   height: 100%;
+   position: fixed;
+   height: 100vh;
    flex-direction: column;
-   padding-bottom: 14em;
-   padding-top: 14em;
    display: flex;
    text-align: center;
+   justify-content: center;
    background: #F6F6F6;
    animation: invisible 3s ease-in-out;
    visibility: hidden;
    z-index: 1;
-   overflow: hidden;
 }
 
 @keyframes invisible {
